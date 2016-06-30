@@ -7,10 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.coolweather.app.CoolWeather">
+    tools:context="zhenhuo.com.asynctaskdemo.AsyncTaskDemo">
 
-    <TextView
+    <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:onClick="loadImage"
+        android:text="获取图片" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:onClick="loadProgress"
+        android:text="获取进度条" />
 </RelativeLayout>
